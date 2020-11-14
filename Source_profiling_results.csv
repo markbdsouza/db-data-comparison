@@ -1,0 +1,9 @@
+source,MySQL
+query,select * from actor
+,
+,Unique Count,Null Count,Maximum Value,Minimum Value,Mean Value
+actor_id,200,0,200,1,100.5
+first_name,128,0,ZERO,ADAM,
+last_name,121,1,ZELLWEGER,AKROYD,
+last_update,3,0,2020-11-14 18:21:12,2006-02-15 04:34:33,
+score,100,100,200.0,101.0,150.5

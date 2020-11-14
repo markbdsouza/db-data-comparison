@@ -1,0 +1,9 @@
+target,Oracle
+query,select * from actor_5
+,
+,Unique Count,Null Count,Maximum Value,Minimum Value,Mean Value
+actor_id,198,0,199,2,100.5
+first_name_2,128,0,ZERO,ADAM,
+last_update,1,0,2006-02-15 04:34:33,2006-02-15 04:34:33,
+last_name_2,121,0,ZELLWEGER,AKROYD,
+middle_name,1,197,WEST,WEST,

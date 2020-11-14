@@ -14,7 +14,7 @@ def read_oracle_connection_variables():
 def read_oracle_query():
     with open('config.json') as f:
         connection_vars = json.load(f)['Oracle']
-    return itemgetter('query')(connection_vars)
+    return itemgetter('Query')(connection_vars)
 
 
 def create_ctx_oracle_connection():
@@ -25,7 +25,6 @@ def create_ctx_oracle_connection():
     return cx_Oracle.connect(user_name, password, dsn_tns)
 
 
-
 def create_sql_alchemy_connection():
     host_name, port, service_name, user_name, password = read_oracle_connection_variables()
     con_string = "oracle+cx_oracle://{0}:{1}@{2}:{3}/{4}?encoding=UTF-8".format(user_name, password, host_name, str(port), service_name)
@@ -33,20 +32,15 @@ def create_sql_alchemy_connection():
     return e.connect()
 
 
-def create_data_frame(table_name = ""):
+def create_data_frame(query):
     try:
         con = create_sql_alchemy_connection()
-        if table_name != "":
-            query = "select * from {}".format(table_name)
-        else:
-            query= read_oracle_query()
         frame = pd.read_sql(query, con)
+    except ValueError as e:
+        print(e)
+    finally:
         close_connection(con)
         return frame
-    except: # catch *all* exceptions
-        print('Error occurred while connecting to Oracle')
-    # finally:
-
 
 
 def close_connection(con):
@@ -56,4 +50,6 @@ def close_connection(con):
 def test_connection():
     create_sql_alchemy_connection()
 
-test_connection()
+
+if __name__=="__main__":
+    test_connection()

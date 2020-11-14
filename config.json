@@ -1,21 +1,19 @@
 {
-  "SourceObject": {
-    "columnList": [""]
-  },
-
+  "Source": "MySQL",
+  "SourceQuery": "select * from actor",
+  "Target": "Oracle",
+  "TargetQuery": "select * from actor_5",
   "MySQL": {
     "HostName": "localhost",
     "UserName": "root",
     "Password": "admin",
-    "Schema": "sakila",
-    "query": "select * from "
+    "Schema": "sakila"
   },
   "Oracle": {
     "HostName": "localhost",
-    "Port" : 1521,
+    "Port": 1521,
     "ServiceName": "xe",
-    "UserName" : "system",
-    "Password" : "admin",
-    "query" : "select * from actor_5"
+    "UserName": "system",
+    "Password": "admin"
   }
 }
