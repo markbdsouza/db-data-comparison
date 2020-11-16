@@ -1,8 +1,15 @@
 {
   "Source": "MySQL",
-  "SourceQuery": "select * from actor",
   "Target": "Oracle",
-  "TargetQuery": "select * from actor_5",
+  "ComparisonQueries":
+  [{
+    "TestSet": "Actor test set 1",
+    "SourceQuery": "select * from actor",
+    "TargetQuery": "select * from actor_5"
+  }
+  ],
+
+
   "MySQL": {
     "HostName": "localhost",
     "UserName": "root",

@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5328c02c-b673-4161-8adf-d13397a7f19b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Connections/AllConnections.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Connections/MySQLConnection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataProfiling.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CONSTANTS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Connections/ReadConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataframeLogic/GenericDFActivities.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OutputCSVFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MySQLConnection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OracleConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/OracleConnection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connections/AllConnections.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/AllConnections.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connections/MySQLConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/MySQLConnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connections/OracleConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/OracleConnection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataProfiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/DataProfiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source_profiling_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Target_profiling_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/comparison.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diff.csv" beforeDir="false" afterPath="$PROJECT_DIR$/diff.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diff.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +42,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\madsouza\PycharmProjects\DBAutomation\DataframeLogic" />
       <recent name="C:\Users\madsouza\PycharmProjects\DBAutomation\Connections" />
     </key>
   </component>
@@ -51,8 +58,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.comparison">
-    <configuration name="DataProfiling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="AllConnections" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DBAutomation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -60,11 +67,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Connections" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataProfiling.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Connections/AllConnections.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -81,11 +88,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Connections" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\madsouza\PycharmProjects\DBAutomation\Connections\MySQLConnection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Connections/MySQLConnection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +101,49 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="OracleConnection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="OracleConnection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DBAutomation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Connections" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Connections/OracleConnection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ReadConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DBAutomation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Connections" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Connections/ReadConfig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DBAutomation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -106,49 +155,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\madsouza\PycharmProjects\DBAutomation\Connections\OracleConnection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="comparison" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DBAutomation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/comparison.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="mySqlPandas" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="DBAutomation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\madsouza\PycharmProjects\DBAutomation\Connections\MySQLConnection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.comparison" />
-        <item itemvalue="Python.DataProfiling" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.ReadConfig" />
         <item itemvalue="Python.MySQLConnection" />
-        <item itemvalue="Python.OracleConnection" />
-        <item itemvalue="Python.mySqlPandas" />
+        <item itemvalue="Python.OracleConnection (1)" />
+        <item itemvalue="Python.AllConnections" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +185,14 @@
       <option name="presentableId" value="Default" />
       <updated>1605090570734</updated>
     </task>
+    <task id="LOCAL-00001" summary="updating for data profiling">
+      <created>1605366226203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605366226203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,11 +200,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updating for data profiling" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating for data profiling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -205,19 +226,19 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/comparison.py</url>
-          <line>25</line>
+          <url>file://$PROJECT_DIR$/DataframeLogic/comparison.py</url>
+          <line>22</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataProfiling.py</url>
-          <line>21</line>
+          <url>file://$PROJECT_DIR$/DataframeLogic/DataProfiling.py</url>
+          <line>22</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Connections/AllConnections.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="35" />
+          <url>file://$PROJECT_DIR$/DataframeLogic/comparison.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -230,13 +251,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="readOracleConfigVariables()" language="Python" />
-        <watch expression="df.dropna()" language="Python" />
         <watch expression="__name__" language="Python" />
-        <watch expression="df['middle_name'].dropna().max()" language="Python" />
-        <watch expression="pd.concat([is_na, unique])" language="Python" />
-        <watch expression="pd.concat([unique,is_na], axis=1)" language="Python" />
-        <watch expression="a['Source']" language="Python" />
       </configuration>
     </watches-manager>
   </component>

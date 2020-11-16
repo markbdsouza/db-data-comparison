@@ -1,7 +1,8 @@
-import json
-import pandas as pd
+from CONSTANTS import SOURCE, TARGET
 from Connections.MySQLConnection import create_data_frame as create_my_sql_data_frame
 from Connections.OracleConnection import create_data_frame as create_oracle_data_frame
+from Connections.ReadConfig import read_db_details
+from DataframeLogic.GenericDFActivities import create_summary_data_frame
 
 
 def call_db_frame_create(type, query):
@@ -11,17 +12,13 @@ def call_db_frame_create(type, query):
         return create_my_sql_data_frame(query)
 
 
-def create_data_frames():
-    with open('./config.json') as f:
-        config = json.load(f)
-        source = config['Source']
-        source_query = config['SourceQuery']
-        target = config['Target']
-        target_query = config['TargetQuery']
+def create_data_frames(source, source_query, target,target_query):
+
     df1 = call_db_frame_create(source, source_query)
     df2 = call_db_frame_create(target, target_query)
-    return df1, df2, create_summary_data_frame('source', source, source_query), create_summary_data_frame('target', target, target_query)
+    return df1, df2, create_summary_data_frame(SOURCE, source, source_query), create_summary_data_frame(TARGET, target, target_query)
 
 
-def create_summary_data_frame(type, db, query):
-    return pd.DataFrame([[type, db], ['query', query],[]])
+if __name__=="__main__":
+    create_data_frames()
+

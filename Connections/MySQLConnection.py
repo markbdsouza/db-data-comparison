@@ -1,19 +1,10 @@
 import json
-import pandas as pd
 from sqlalchemy import create_engine,exc
 from operator import itemgetter
 
 # https://hackersandslackers.com/compare-rows-pandas-dataframes/
-def read_oracle_config_variables():
-    with open('config.json') as f:
-        connection_vars = json.load(f)['MySQL']
-    return itemgetter('HostName', 'UserName', 'Password', 'Schema')(connection_vars)
-
-
-def read_my_sql_query():
-    with open('config.json') as f:
-        connection_vars = json.load(f)['MySQL']
-    return itemgetter('Query')(connection_vars)
+from Connections.ReadConfig import read_oracle_config_variables
+from DataframeLogic.GenericDFActivities import create_data_frame_with_sql_con
 
 
 def create_my_sql_connection():
@@ -22,11 +13,10 @@ def create_my_sql_connection():
     return sqlEngine.connect()
 
 
-def create_data_frame(query, table_name = ''):
+def create_data_frame(query):
     try:
         my_sql_connection = create_my_sql_connection()
-        # query = read_my_sql_query() if table_name == '' else  "select * from {}".format(table_name)
-        data_frame = pd.read_sql(query, my_sql_connection)
+        data_frame = create_data_frame_with_sql_con(query, my_sql_connection)
         close_connection(my_sql_connection)
         return data_frame
     except RuntimeError as e:
@@ -40,10 +30,9 @@ def close_connection(con):
 
 
 def test_connection():
-    df = create_data_frame()
+    df = create_data_frame("select * from actor")
     print(df)
 
 
 if __name__=="__main__":
-    print("inside")
     test_connection()
