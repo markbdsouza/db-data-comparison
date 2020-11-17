@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5328c02c-b673-4161-8adf-d13397a7f19b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CONSTANTS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Connections/ReadConfig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataframeLogic/GenericDFActivities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OutputCSVFile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Connections/FileConnection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONSTANTS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/CONSTANTS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connections/AllConnections.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/AllConnections.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connections/MySQLConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/MySQLConnection.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Connections/OracleConnection.py" beforeDir="false" afterPath="$PROJECT_DIR$/Connections/OracleConnection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataProfiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/DataProfiling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source_profiling_results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Target_profiling_results.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Connections/ReadConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/ReadConfig.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataframeLogic/DataProfiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/DataFrameDataProfiling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataframeLogic/GenericDFActivities.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/GenericDFActivities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataframeLogic/comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataframeLogic/DataFrameComparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OutputCSVFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config/OutputFileConfig.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/diff.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +37,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\madsouza\PycharmProjects\DBAutomation\Config" />
       <recent name="C:\Users\madsouza\PycharmProjects\DBAutomation\DataframeLogic" />
       <recent name="C:\Users\madsouza\PycharmProjects\DBAutomation\Connections" />
     </key>
@@ -134,7 +134,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Connections/ReadConfig.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\madsouza\PycharmProjects\DBAutomation\Config\ReadConfig.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605366226203</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated for modular approach and multiple query input">
+      <created>1605547382476</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605547382476</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,35 +217,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updating for data profiling" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating for data profiling" />
+    <MESSAGE value="Updated for modular approach and multiple query input" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated for modular approach and multiple query input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mysql.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/DataframeLogic/DataFrameComparison.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mysql.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/DataframeLogic/DataFrameComparison.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataframeLogic/comparison.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataframeLogic/DataProfiling.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DataframeLogic/comparison.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="36" />
+          <url>file://$PROJECT_DIR$/DataframeLogic/DataFrameComparison.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -252,6 +250,8 @@
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="__name__" language="Python" />
+        <watch expression="diff_df.empty" language="Python" />
+        <watch expression="create_empty_df()" language="Python" />
       </configuration>
     </watches-manager>
   </component>

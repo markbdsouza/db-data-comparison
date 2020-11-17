@@ -1,15 +1,27 @@
 {
-  "Source": "MySQL",
-  "Target": "Oracle",
   "ComparisonQueries":
   [{
-    "TestSet": "Actor test set 1",
+    "TestSet": "CSV Oracle TestSet",
+    "Source": "CSV",
+    "SourceQuery": "",
+    "Target": "Oracle",
+    "TargetQuery": "select series as \"Series reference\", period , description,revised,published from price_indexes"
+  },
+    {
+    "TestSet": "MySQL Oracle TestSet",
+    "Source": "MySQL",
     "SourceQuery": "select * from actor",
-    "TargetQuery": "select * from actor_5"
+    "Target": "Oracle",
+    "TargetQuery": "select * from actor_4"
+  },
+    {
+    "TestSet": "TXT Oracle TestSet",
+    "Source": "TXT",
+    "SourceQuery": "",
+    "Target": "Oracle",
+    "TargetQuery": "select id as ID, egf_baseline as EGF_Baseline, efg_stimulus as EGF_Stimulus from tab_data_set"
   }
   ],
-
-
   "MySQL": {
     "HostName": "localhost",
     "UserName": "root",
@@ -22,5 +34,12 @@
     "ServiceName": "xe",
     "UserName": "system",
     "Password": "admin"
+  },
+  "CSV": {
+    "FileName": "price-indexes-june.csv"
+  },
+  "TXT": {
+    "FileName": "data_tab_delimited.txt",
+    "Delimiter": "\t"
   }
 }
